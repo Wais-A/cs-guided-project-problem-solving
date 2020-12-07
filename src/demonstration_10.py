@@ -17,5 +17,23 @@ the maximum number is first.
 """
 def max_and_min(input_str):
     # Your code here
+    # numbers = list(input_str.replace(' ', ''))
+    numbers = input_str.replace(' ', ', ')
+    x = list(numbers)
+    sorted = [int(el) for el in numbers.split(',')]
+    newList = []
+    # for num in x:
+    #     sorted.append(int(num))
+    sorted.sort()
+    newList.append(sorted[-1])
+    newList.append(sorted[0])
+    string = ''
+    for ele in newList:
+        string = string + ' ' + str(ele)
+    return string
 
+
+print(max_and_min("1 2 3 4 5"))
+print(max_and_min("1 2 -3 4 5"))
+print(max_and_min("1 9 3 4 -5"))
 
