@@ -14,4 +14,19 @@ Examples:
 """
 def repeat_it(input_str):
     # Your code here
-
+    letters = list(input_str)
+    
+    i = 1
+    word = []
+    for letter in letters:
+        x = letter * i
+        word.append(x.capitalize())
+        i += 1
+    str = ''
+    for ele in word:
+        str = str + '-' + ele
+    return str[1:]
+        
+print(repeat_it('abcd'))
+print(repeat_it("RqaEzty"))
+print(repeat_it("cwAt"))
