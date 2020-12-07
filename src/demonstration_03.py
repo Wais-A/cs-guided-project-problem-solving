@@ -17,7 +17,7 @@ import math
 def multiply_nums(nums):
     # Your code here
     print(math.prod([int(num) for num in nums.split(', ')]))
-    
+   
     
 multiply_nums('2, 3')
 multiply_nums("1, 2, 3, 4")
