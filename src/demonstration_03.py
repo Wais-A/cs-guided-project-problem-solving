@@ -13,7 +13,14 @@ Notes:
 - Bonus: Try to complete this challenge in one line!
 """
 
-
+import math
 def multiply_nums(nums):
     # Your code here
+    print(math.prod([int(num) for num in nums.split(', ')]))
+    
+    
+multiply_nums('2, 3')
+multiply_nums("1, 2, 3, 4")
+multiply_nums("54, 75, 453, 0")
+multiply_nums("10, -2")
 
